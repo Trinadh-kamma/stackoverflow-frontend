@@ -1,0 +1,20 @@
+.details__container {
+  flex:3;
+  width:100%;
+  max-width:320px;
+  margin:0.2rem 1.5rem;
+  flex-wrap:nowrap;
+  flex-shrink: 0;
+  float:right;
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:980px) {
+  .details__container {
+    display:none;
+  }
+}

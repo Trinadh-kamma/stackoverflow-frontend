@@ -1,0 +1,22 @@
+.main-container {
+  width:100%;
+  min-height:100vh;
+  max-width:1260px;
+  display:flex;
+  flex-direction:row;
+  margin:4rem auto;
+}
+.main__question__container {
+  margin-left:9.1rem;
+  padding:1px;
+  flex:5;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+@media screen and (max-width:600px) {
+  .main__question__container {
+    margin-left:0rem;
+  }
+}

@@ -1,0 +1,297 @@
+nav {
+  width:100%;
+  margin: 0% auto;
+  border-top:3px solid rgb(243, 129, 42);
+  background-color: #f8f9f9;
+  position:fixed;
+  z-index:5;
+  top:0%;
+  left:0%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow: 0px 2px 2px #00000033;
+}
+
+.navbar {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  padding:5px 0px;
+}
+
+
+@media screen and (max-width:600px) {
+  .navbar {
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+}
+
+.navbar form img{
+  height:20px;
+  width:20px;
+}
+
+.nav-icon {
+  height:35px;
+  width:35px;
+}
+
+@media screen and (max-width:600px) {
+  .nav-icon {
+    margin:0rem;
+    height:28px;
+    width:28px;
+  }
+}
+
+.nav-logo {
+  padding:5px 10px;
+}
+
+.menu {
+  width:45px;
+  height:45px;
+  margin:0px 7px 0px 0px;
+  padding:10px;
+}
+
+
+@media screen and (min-width:600px) {
+  .menu {
+    display:none;
+  }
+}
+
+
+.nav-item {
+  text-decoration: none;
+  color:rgb(107, 105, 105);
+  font-size:13px;
+  font-weight:400;
+  transition: 0.2s;
+  margin:0px 1px;
+}
+
+.nav-btn {
+  cursor:pointer; 
+  border-radius:20px;
+  padding:6px 12px; 
+}
+
+.nav-item:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.navbar form {
+  flex-grow:0.65;
+  position:relative;
+  flex-wrap: wrap;
+  position:relative;
+  margin:0rem;
+}
+
+.navbar form input {
+  width:100%;
+  margin:0;
+  padding:8px 10px 8px 34px;
+  border-radius:3px;
+  border:1px solid #0000003e;
+  font-size:13px;
+  outline:none;
+  color: #000000;
+  font-family:"Arial";
+  letter-spacing: 0.02rem;
+}
+
+.navbar form .search-icon {
+  position:absolute;
+  top:8px;
+  left:10px;
+}
+
+.search-icon1 {
+  margin-right:0.5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:25px;
+  height:25px;
+  margin-top:4px;
+  background: transparent;
+  border:none;
+  outline:none;
+  cursor:pointer;
+}
+
+.navbar .search-bar2 {
+  position:absolute;
+  top:60px;
+  width:100%;
+  padding:4px;
+  margin:5px auto;
+  border:none;
+}
+
+.navbar .search-bar2 input {
+  width: 100%;
+  -webkit-box-shadow: 0 0 2px 1px #0074cc;
+  -moz-box-shadow: 0 0 2px 1px #0074cc;
+  box-shadow: 0 0 2px 1px #0074cc;
+  color: #000;
+  font-family: "Arial";
+  font: size 1rem;
+}
+
+
+.navbar .search-bar2 input:hover,
+.navbar .search-bar2 input:focus {
+  -webkit-box-shadow: 0 0 2px 1px #e57316;
+  -moz-box-shadow: 0 0 2px 1px #e57316;
+  box-shadow: 0 0 2px 1px #e57316;
+}
+
+.nav-link {
+  border:1px solid blue;
+  font-size:14px;
+  padding:8px 14px;
+  background-color:#e7f8fe;
+  border-radius:3px;
+  outline:none;
+  cursor:pointer;
+  text-align: center;
+  margin-left:0.2rem;
+}
+
+
+.nav-link:hover {
+  background-color: #d3e4eb;
+}
+
+.search {
+  height:20px;
+  width:20px;
+}
+
+.log-out {
+  background:#e7f8fe;
+  border:1px solid blue;
+  font-size:11px;
+  padding:10px;
+  margin: 0rem 1.2rem 0rem 0.6rem;
+  border-radius:3px;
+  cursor:pointer;
+}
+
+.log-out:hover {
+  background: #0074cc;
+  color:#fff;
+}
+
+
+@media screen and (max-width:600px) {
+  .log-out {
+    padding:6px;
+    font-size:11px;
+  }
+}
+
+
+@media screen and (max-width:314px) {
+  .log-out {
+    padding:8px 3px;
+    font-size:6px;
+  }
+}
+
+.products {
+  margin-right:0.5rem;
+}
+
+
+/* ------ media queries  --------*/ 
+
+@media screen and (max-width:650px) {
+  .navbar {
+    display:flex;
+    justify-content: flex-start;
+    width:100%;
+  }
+}
+
+@media screen and (min-width:600px) {
+  .search {
+    display:none;
+  }
+}
+
+@media screen and (max-width:815px) {
+  .nav-logo {
+    padding:4px 6px;
+  }
+}
+
+
+
+@media screen and (max-width:600px) {
+  .nav-logo 
+  {
+    display:none;
+  }
+  .navbar form .search-icon {
+    position:absolute;
+    top:11px;
+    left:14px;
+  }
+  .navbar .search-bar2 input {
+    font-size:0.8rem;
+  }
+  .navbar .search-bar2 input{
+    border:none;
+  }
+  .products {
+    margin-right:auto;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .navbar .search-bar2 {
+    display:block;
+  }
+  .navbar form {
+    display:none;
+  }
+  .nav-link {
+    margin:0rem 1rem 0rem 0.3rem;
+  }
+}
+
+
+
+@media screen and (max-width:670px) {
+  .nav-link {
+    padding:8px 8px;
+  }
+  
+}
+
+@media screen and (min-width:601px) {
+  .nav-icon {
+    display:none;
+  }
+  .search-bar2 {
+    display:none;
+  }
+}
+
+
+@media screen and (min-width:670px) {
+  .log-out {
+    padding:10px;
+  }
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter as Router} from 'react-router-dom';
+import AllRoutes from './AllRoutes';
+
 
 function App() {
+
+  const user = 123;
+
+  const [isMenu, setIsMenu] = useState(false)
+  
+  const handleMenu = () => {
+    setIsMenu(!isMenu);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar user={user} isMenu = {isMenu}  handleMenu={handleMenu}/>
+        <AllRoutes user={user} isMenu={isMenu}/>
+      </Router>
     </div>
   );
 }

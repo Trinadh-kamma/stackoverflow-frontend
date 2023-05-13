@@ -1,0 +1,6 @@
+.main__home-container {
+  height:auto;
+  display:flex;
+  justify-content:center;
+  margin:3.3rem 0.2rem;
+}

@@ -1,0 +1,75 @@
+
+.mobile__sidebar {
+  z-index:  100;
+  margin:3.3rem 0.2rem;
+  max-width:164px;
+  width:100%;
+  border-right:1px solid rgb(211, 208, 208);
+  border-top:none;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+.mobile__sidebar a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:7px 10px;
+  display:flex;
+  font-weight:400;
+  cursor:pointer;
+  text-decoration: none;
+  color:rgb(129, 125, 125);
+  font-size:13.4px;
+  letter-spacing:0.2px;
+  margin-top:0.2rem;
+}
+
+.mobile__sidebar a:nth-child(1) {
+  margin-top:1rem;
+  border:none;
+  outline:none;
+  
+}
+
+.mobile__sidebar a:nth-child(4),
+.mobile__sidebar a:nth-child(5),
+.mobile__sidebar a:nth-child(6) {
+  padding-left:2.4rem;
+}
+
+.mobile__sidebar a:focus {
+  font-weight:bold;
+  color:#000;
+}
+
+
+.mobile__sidebar a.active:focus {
+  background-color:rgba(210, 209, 209, 0.521);
+  border-right:3px solid rgb(247, 138, 13);
+  width:100%;
+}
+
+
+.mobile__sidebar a:hover {
+  color:#000000;
+}
+
+.mobile__sidebar p {
+  font-style:"normal";
+  font-size:12px;
+  letter-spacing:0.01rem;
+  margin:1rem 0rem 0.45rem 0.7rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:grey;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width:600px) {
+  .mobile__sidebar {
+    display:none;
+  }
+}

@@ -1,0 +1,60 @@
+.widget__container {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+  border:1px solid hsl(47, 33%, 71%);
+  border-radius:2px;
+  box-shadow : 0px 0px 5px 1px hsl(47, 33%, 71%)
+}
+
+.widget1 {
+  background-color: hsl(46, 92%, 90%);
+  width:100%;
+  padding:0.8rem 0rem 1.1rem 1rem;
+  border-bottom:1px solid hsl(47, 33%, 71%);
+}
+
+.widget1 h4 {
+  color : #5b5858;
+  font-size:13.2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:bolder;
+}
+
+.widget2 {
+  display:flex;
+  flex-direction:column;
+  background-color: hsl(47, 87%, 94%);
+  padding:1rem 0rem 0rem 0.8rem;
+}
+
+.widget2__sub {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:0.8rem;
+  margin:0rem 0.5rem 1rem 0rem;
+}
+
+.widget2 .widget2__sub svg {
+  height:25px;
+  width:27px;
+  margin-top:-5px;
+}
+
+.widget2 .widget2__sub img {
+  height:15px;
+  width:18px;
+}
+
+.widget2 .widget2__sub p {
+  font-size:12.8px;
+  margin-left:0.8rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing:0.03rem;
+  color:#282727;
+  line-height:17px;
+  cursor:pointer;
+}
